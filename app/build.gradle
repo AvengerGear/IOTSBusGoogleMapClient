@@ -1,0 +1,30 @@
+apply plugin: 'android'
+
+android {
+    compileSdkVersion 20
+    buildToolsVersion '20.0.0'
+
+    defaultConfig {
+        applicationId "com.avengergear.iots.IOTSBusGoogleMapClient"
+        minSdkVersion 16
+        targetSdkVersion 19
+    }
+
+    buildTypes {
+        release {
+            runProguard false
+        }
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'com.google.android.gms:play-services:3.2.+'
+    compile 'org.jsoup:jsoup:1.6.1'
+    compile 'com.koushikdutta.async:androidasync:2.+'
+    compile project(':libs:iOTSClient')
+}
+

@@ -1,0 +1,16 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 20
+    buildToolsVersion "20.0.0"
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 20
+    }
+}
+
+dependencies {
+    compile 'com.android.support:support-v4:20.+'
+    compile files('libs/org.eclipse.paho.client.mqttv3-1.0.1.jar')
+}
