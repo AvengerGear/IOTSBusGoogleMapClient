@@ -568,6 +568,7 @@ public class IOTSBusGoogleMapClientMainActivity extends FragmentActivity impleme
 
             if (bool == false) {
                 Toast.makeText(getBaseContext(), "Can't find any bus number", Toast.LENGTH_LONG).show();
+                location_marker.remove();
                 return;
             }
 
